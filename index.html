@@ -1,0 +1,819 @@
+<!doctype html>
+<html lang="en">
+	
+	<head>
+		
+		<meta charset="utf-8">
+		
+		<title>A Thing or Two About Static Site Generators by Steven Waters</title>
+
+		<meta name="description" content="This is a presentation about Static Site Generators...duh. This is also going to be given on 11/13/14...wish me luck!">
+	
+		<meta name="author" content="Steve Waters">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+	
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<!-- Main Reveal.js CSS --> 
+		<link rel="stylesheet" href="css/reveal.min.css">
+	
+		<!-- Reveal.JS theme --> 
+		<link rel="stylesheet" href="css/theme/night.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+
+		</script>
+
+		<!--[if lt IE 9]>
+			<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+
+		<script type="text/javascript" src="http://slidemote.jit.su/slidemote.js#xx1x1"></script>
+
+
+		<style type="text/css">
+
+			.reveal h1 {
+				letter-spacing: 0em;
+			}
+
+
+			.space-down-1 {
+				margin-top: 2em;
+			}
+
+			
+			html.space-down-2 div.slide-background.present {
+    			background-position: 10% 0%;
+			}
+
+			.justify-left {
+				text-align:left;
+			}
+
+			.reveal p {
+				margin-bottom:20px;
+			}
+
+		</style>
+
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				
+				<section>
+					
+					<h1>
+						A Thing or Two About Static Site Generators
+					</h1>
+				
+					<p class="space-down-1">
+						by Steve Waters
+					</p>
+
+					<p class="space-down-1">
+						@stevenwaters86 
+					</p>
+
+					<p class="space-down-1">
+						<small>Sharing my Twitter handle here because it seems like the thing to do these days</small>
+					</p>
+				
+				</section>
+
+
+				<section data-background="assets/site_homepage.png" data-state="space-down-2"> 
+
+
+				</section>
+
+
+				<section> 
+
+
+				 <p>
+					A Static Site Generator are programs that take content written in Markdown (or other formats) and converts it to HTML. The HTML is also generated using templates.
+				 </p>
+				
+				<br><br>
+				
+				<p>
+					This means you don't have to create a HTML file for each of your posts and handcode the header,footer, etc for it
+				</p>
+
+
+			</section>
+
+
+				<section> 
+
+					<h2>
+						Low Cost Hosting and Templating
+					</h2> 
+
+					<ul>
+						<li> Host on GitHub Pages, Amazon S3, or even on DropBox.</li>
+						<li> or maybe on a Rasberry Pi?</li> 
+						<li> Build from scratch easily </li> 
+						<li> The syntax behind each of the different templating engines are easy to understand </li> 
+					</ul> 
+
+				</section> 
+
+
+				<section> 
+
+					<h1>
+						My site uses Hexo
+					</h1> 
+						
+					<p>
+						but I will also mention Jekyll in my slides too...
+					</p>
+				
+				</section>
+
+
+
+				<section>
+				
+					<h2>
+						Why I chose a Static Site Generator for my site...
+					</h2>
+					
+					<p> 
+						I had a vision for how I wanted to build my site before I knew what a Static Site Generator was.
+					</p>
+
+				</section>
+
+
+				<section data-background="assets/codepen_homepage.png" data-state="space-down-2"> 
+
+				
+				</section> 
+
+
+				<section> 
+
+					<h3>
+						I started designing a new theme for Wordpress 
+					</h3>
+
+				</section>
+
+
+
+				<section> 
+
+					<h3> 
+						<s> I started designing a new theme for Wordpress </s> 
+					</h3>
+
+				</section>
+
+
+
+				<section>
+
+					<h2> 
+						I wanted something simple
+					</h2> 
+
+					<p>like really simple</p>
+
+					<ul>
+
+						<li>
+							I was envisioning using all front-end techonologies for it
+						</li>
+
+						<li> 
+						Using JSON Files to store configuration, posts, metadata, and other content
+						</li>
+
+						<li>
+						Use JavaScript for everything!
+						</li>
+
+						<li>
+						I was thinking about how the back-end could be secure? 
+						</li>
+
+					</ul>
+
+				</section>
+
+				<section>
+
+					<ul>
+
+						<li>
+							Previous web hosting = bad
+						</li>
+
+						<li>
+							I didn't want to deal with back-end coding
+						</li>
+
+						<li>
+							I only wanted to deal with front-end technologies
+						</li>
+
+						<li>
+							I didn't want to design a new theme from scratch by using the Wordpress theme that I made specifically for that purpose....yeah
+						</li>
+
+					</ul>
+
+				</section>
+
+
+				<section data-background="assets/ssg_research.png" data-state="space-down-2"> </section>
+
+
+				<section>
+
+		            <section data-background="assets/ssg_net.png" data-state="space-down-2"></section>
+
+		            <section data-background="assets/static_gen_com.png" data-state="space-down-2"></section>
+
+		        </section>
+
+		
+
+
+				<section> 
+
+
+					<img src="assets/jekyll_logo.png" />
+
+
+					<p> 
+						I stumbled on one called Jekyll and I was like "hmm, this looks famliar...." 
+					</p>
+
+
+					<p> 
+						It looked famliar beacuse I remember seeing the logo before... 
+					</p>
+
+
+				</section> 
+
+
+
+				<section> 
+					
+
+					<p>
+					 	And then I vaguely remembered a friend epxlaining what Jekyll was at this year's Front-End Design Conference. 
+					</p>
+
+
+					<p>
+						 She was saying all these buzzwords like "Jekyll, Hyde, YAML, Front Matter, Liquid Templating, etc" and I was like... 
+					</p> 
+			
+
+				</section>
+
+
+				<section> 
+
+					<img src="assets/jesse_pinkman_confused_looked.jpg" /> 
+
+
+					<h1> 
+						Wha... 
+					</h1>
+
+
+				</section> 
+
+
+				<section>
+
+		            <section data-background="assets/static_gen_com.png" data-state="space-down-2"></section>
+
+		        </section>
+
+				<section>
+
+					<section> 
+
+						<h2>
+							Installing, Template Building, Publishing Process
+						</h2>
+
+					</section> 
+
+					<section>
+
+						<h1>
+							First
+						</h1>
+
+						<p>
+							You install all the dependencies aka the languages/tools you need to run Static Site Generator scripts 
+						</p>
+						
+
+					</section>
+
+
+					<section>
+
+						<h1>
+							Installing Jekyll
+						</h1> 
+
+						<br><br>
+
+						<p> 
+							Install Ruby (for Windows Users) - http://rubyinstaller.org/ 
+						</p>
+							
+						<p> 
+							Install Ruby Dev Tools 
+						</p>
+								
+						<pre><code> 
+							ruby dk.rb init
+							ruby dk.rb install
+						</code></pre>	
+
+
+						<pre><code>
+						 gem install jekyll
+						</code></pre>
+
+					</section>
+
+
+					<section>
+
+						<h1>
+							Installing Hexo
+						</h1> 
+
+						<br><br>
+
+						<p> 
+							Install Node.js (for all platforms!) - http://nodejs.org/ 
+						</p>
+							
+						<p> 
+							Install Node Package Manager (NPM) 
+						</p>
+
+						<p> 
+							Install Git 
+						</p>
+
+						<pre><code>
+						curl http://npmjs.org/install.sh | sh 
+						</code> </pre>
+
+						<p> 
+							Install Xcode (for Mac users) 
+						</p> 
+						
+						<p>
+							NPM.....Hexo
+						</p>
+								
+						<pre><code> 
+							npm install -g hexo
+						</code></pre>	
+												
+					</section>
+
+					<section> 
+
+						<h1> 
+							Second 
+						</h1>
+
+						<p>
+							Create a directory on your computer, and run install command while in that directory
+						</p>
+
+						<h4>
+							Creating A New Jekyll Site 
+						</h4> 
+
+						<pre><code> 
+							jekyll new mynewblog
+						</pre></code> 
+
+						<pre><code> 
+							cd mynewblog
+						</pre></code> 
+
+						<pre><code>
+							jekyll serve
+						</pre></code> 
+
+
+						<p>
+							Jekyll is running on http://localhost:4000...
+						</p>
+
+
+					</section> 
+
+
+					<section> 
+
+						<h4>
+							Creating A New Hexo Site
+						</h4> 
+
+						<pre><code> 
+							hexo init mynewblog 
+						</pre></code> 
+
+						<pre><code> 
+							cd mynewblog
+						</pre></code> 
+
+						<pre><code>
+							npm install
+						</pre></code> 
+
+						<pre><code>
+							hexo server
+						</pre></code> 
+
+					</section>
+
+					<section>
+
+						<h1>
+							Jekyll Directory 
+						</h1> 
+
+						<img src="assets/NewJeky1.png"/>
+						
+					</section>
+
+					<section>
+
+					<h1>
+						Hexo Directory 
+					</h1> 
+
+					<img src="assets/NewHexo_directory.png"/>
+						
+
+					</section>
+
+					<section data-background="assets/jekyll_default.png">
+
+					</section>
+
+
+					<section data-background="assets/hexo_landscape.png">
+
+					</section>
+
+					<section data-background="assets/hello-front-enders.png"> 
+
+					</section>
+
+					<section> 
+
+						<pre><code> 
+							hexo generate
+						</pre></code> 
+
+						<pre><code> 
+							hexo deploy
+						</pre></code> 
+					
+					</section> 
+
+
+					<section> 
+
+						<img src="assets/hexo_public_html.png" /> 
+
+						<p>
+							...mynewhexosite\public\2014\11\13\hello-front-enders
+						</p>
+
+					</section>
+
+
+
+				</section>
+
+				<section date-state="template-structure">
+
+					<h1>
+						Hexo Theme Structure
+					</h1>
+
+
+					<!-- Adding an inline style is probably the wrong way to do things here --> 
+					<pre><code style="max-height:700px"> 
+						├── _config.yml
+						├── layout
+						├───── _partials
+						├───────── article.ejs 
+						├───────── footer.ejs
+						├───────── head.ejs
+						├───────── header.ejs
+						├───────── sidebar.ejs
+						├───────── post
+						├──────────── title.ejs
+						├──────────── date.ejs
+						├──────────── nav.ejs				
+						├───── _widgets
+						├───────── category.ejs
+						├───────── recent_posts.ejs
+						├────layout.ejs 
+						├─── index.ejs
+						├─── page.ejs
+						├─── post.ejs   
+						├── scripts
+						└── source
+					</code></pre>
+
+				</section> 
+
+				<section data-background="#243446">
+
+
+					<p>
+						for more awesomeness... download Octopress!
+					</p>
+
+					<img src="assets/octopress-logo.png" style="border:none"/>
+
+				</section>
+
+				<section>
+
+					<h1>
+						_config.yml
+					</h1> 
+					
+					<p> 
+						^ a YAML File
+					</p> 
+					
+					<p> 
+						YAML is a recursive acronym for "YAML Ain't Markup Language"
+					</p> 
+					
+					<pre><code> 
+
+						deploy: 
+						  type: github
+						  repo: https://github.com/swaters86/swaters86.github.io.git
+						  branch: master
+
+					</code></pre>
+
+					<h2> 
+						To
+					</h2>
+
+					<pre><code> 
+
+						<?xml version="1.0" encoding="UTF-8" ?>
+						<deploy>
+						    <type>github</type>
+						    <repo>https://github.com/swaters86/swaters86.github.io.git</repo>
+						    <branch>master</branch>
+						</deploy>
+
+					</code></pre>
+
+
+				</section>
+
+				<!--
+				<section> 
+
+					<h1>language</h1> 
+
+					<p> 
+						Something to do with language tags, I have no experience with these... 
+					</p>
+
+					<p> default.yml </p>
+
+				</section>
+				-->
+				
+				<!--
+
+				<section> 
+
+					<h1> 
+						_partials
+					</h1> 
+
+					<p class="space-down-1">
+						<small>or  _includes for Jekyll sites</small>
+					</p>
+				
+				</section>
+			-->
+
+				<section> 			
+					<section data-background="assets/template_hexo_index_html.png" data-state="space-down-2"></section>
+					<section data-background="assets/template_hexo_layout.png" data-state="space-down-2"></section>
+					<section data-background="assets/template_jekyll_default.png" data-state-"spaced-down-2"></section> 
+				</section> 
+
+				<section> 
+				<section data-background="assets/template_hexo_head.png" data-state="space-down-2"></section>
+				<section data-background="assets/template_jekyll_head.png" data-state="space-down-2"></section>
+				</section>
+
+				<section>
+					<section data-background="assets/template_hexo_header.png" data-state="space-down-2"></section>
+					<section data-background="assets/template_jekyll_header.png" data-state="space-down-2"></section>
+				</section>
+
+				<section>
+					<section data-background="assets/template_hexo_footer.png" data-state="space-down-2"></section>
+					<section data-background="assets/template_jekyll_footer.png" data-state="space-down-2"></section>
+				</section>
+
+				<section>
+					<section data-background="assets/template_hexo_index_ejs.png" data-state="space-down-2"></section>
+					<section data-background="assets/template_jekyll_index.png" data-state="space-down-2"></section>
+
+				</section>
+
+				<section>
+					<section data-background="assets/template_hexo_posts.png" data-state="space-down-2"></section>
+					
+					<section>
+					
+					<h1> 
+						Wordpress Loop 
+					</h1>
+					
+					<br>
+					
+					<pre><code> 
+						<?php
+							if ( have_posts() ) :
+								// Start the Loop.
+								while ( have_posts() ) : the_post();
+									/*
+									 * Include the post format-specific template for the content. If you want to
+									 * use this in a child theme, then include a file called called content-___.php
+									 * (where ___ is the post format) and that will be used instead.
+									 */
+									get_template_part( 'content', get_post_format() );
+								endwhile;
+								// Previous/next post navigation.
+								twentyfourteen_paging_nav();
+							else :
+								// If no content, include the "No posts found" template.
+								get_template_part( 'content', 'none' );
+							endif;
+						?>
+					</code></pre>
+
+				</section> 
+					
+				</section>
+
+				<section>
+					<section data-background="assets/template_hexo_article.png" data-state="space-down-2"></section>
+					<section data-background="assets/template_jekyll_post.png" data-state="space-down-2"></section>
+				</section>
+				
+				<section data-background="assets/template_hexo_title.png" data-state="space-down-2"></section>
+				<section data-background="assets/template_hexo_local_config.png" data-state="space-down-2"></section>
+				<section data-background="assets/template_hexo_master_config.png" data-state="space-down-2"></section>
+
+
+				<section> 
+
+					<h4>	
+						Importing from Wordpress
+					</h4> 
+
+					<p>
+						Use Jekyll Built-In Tool
+					</p>
+
+					<pre><code>
+						$ ruby -rubygems -e 'require "jekyll-import";
+					    JekyllImport::Importers::WordpressDotCom.run({
+					      "source" => "wordpress.xml",
+					      "no_fetch_images" => false,
+					      "assets_folder" => "assets"
+					    })'
+					</code></pre>
+
+					<ul> 
+						<li> Export XML from Worpdress.com </li>
+						<li> Save that File into a folder </li> 
+					</ul> 
+
+
+					<p>
+						Use ALternatives: Exitwp, "A great article", wpXml2Jekyll
+					</p>
+
+
+				</section> 
+
+
+				<section> 
+
+					<p> 
+						Exporting from Static Site Generators...is the Achilles Heel of Static Site Generators 
+					</p> 
+
+				</section> 
+
+
+				<section> 
+
+					<h1>
+						Are Static Site Generators for You?
+					</h1> 
+
+				</section> 
+
+				<section> 
+
+					<h1>
+						Questions?
+					</h1> 
+
+				</section> 
+
+			</div>
+
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
