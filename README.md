@@ -1,7 +1,7 @@
 # A Thing or Two About Static Site Generators 
 ------------
 
-This is a presentation I gave last month for the Front-End Design Conference meetup group in Tampa, Fl. I made this using Reveal.js so I'm pretty proud of it. I'm statified with the way it turned out. To learn more about what Reveal.js can do, see below: 
+This is a presentation I gave last month for the Front-End Design Conference meetup group in Tampa, Fl. I made this using Reveal.js so I'm pretty proud of it. I'm satisfied with the way it turned out. Check out the content below to learn more about what Reveal.js can do: 
 
 
 ## reveal.js [![Build Status](https://travis-ci.org/hakimel/reveal.js.svg?branch=master)](https://travis-ci.org/hakimel/reveal.js)
